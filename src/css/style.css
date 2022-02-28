@@ -1,0 +1,145 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+input {
+  outline: none;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: 'Ubuntu Mono', monospace;
+  background: linear-gradient(45deg, rgba(4, 2, 96, 0.7), rgba(180, 49, 183, 0.9)), linear-gradient(90deg, rgba(51, 136, 140, 0.3), rgba(87, 240, 240, 0.1));
+  /* overflow: hidden; */
+}
+.panel {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 620px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  background: #141519;
+
+}
+
+@media screen and (max-width:450px){
+	.panel{
+		width:90%;
+		height:85%;
+	}
+	
+  #typing {
+    width:90%;
+  }
+	
+}
+.panel .state {
+  margin-top: 5px;
+  width: 100%;
+  /*height: 30%;*/
+  color: white;
+}
+.panel .state i.fa-ban {
+  font-size: 40px;
+}
+.panel .state img.logo {
+  height: 38%;
+  margin-bottom:1%;
+}
+.panel .state h2 {
+  font-weight: 400;
+}
+.panel .form {
+  width: 85%;
+  margin: 30px auto 40px auto;
+}
+.panel .login {
+  height: 45px;
+  width: 100%;
+  background-color: #8bc34a;
+  border-radius: 5px;
+  position: relative;
+  line-height: 45px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+  transition: background .2s;
+  cursor: pointer;
+}
+.panel .login:active {
+  transform: translateY(2px);
+}
+.panel .login:hover {
+  background-color: #599b2d;
+}
+
+.panel input[type='text'] {
+  background-color: #22232a;
+  border-radius: 5px;
+  font-size: 15px;
+  height: 45px;
+  border: none;
+  padding-left: 15px;
+  width: calc(100% - 15px);
+  margin-bottom: 10px;
+}
+.panel input[type='text'][placeholder] {
+  color: #ffff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.panel .fack {
+  margin-top: 30px;
+  font-size: 14px;
+}
+.panel .fack i.fa {
+  text-decoration: none;
+  color: #fff;
+  vertical-align: middle;
+  font-size: 20px;
+  margin-right: 5px;
+}
+.panel .fack a:link {
+  color: #616973;
+}
+.panel .fack a:visited {
+  color: #555c65;
+}
+.panel .kota {
+  margin: 10px auto 10px 5px;
+  padding-top: 5px;
+}
+
+.panel .gender {
+  margin: 10px auto 10px 5px;
+  padding-top: 5px;
+}
+
+#pesan{
+ outline: none !important;
+ border: 5px solid white;
+ border-radius: 5px;
+ resize: none;
+ width: 97%;
+ height: 80px;
+}
+#typing {
+	line-height: 22px;
+  line-break: normal;
+	font-size:18px;
+	margin: 0;
+	position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
